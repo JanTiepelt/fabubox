@@ -16,7 +16,20 @@ The required UV exposure dose can be found in the data-sheet linked above to be 
 
 ## UV-exposure on ELegoo Mars 3 printer
 
-## Result Characterization
+## Resist development
 
-Below shown is 
+The resist was developed in MIT.nano in AZ300 MIF Developer for 90 seconds at room temperature.
+
+## Result Characterization in Optical Microscope 
+
+### 1st experiment: Develop structures in a matrix of undeveloped resist
+
+The CAD structures used in this experiment are depicted below. Since the bodies in the STL file are usually the areas of the resin to be hardened, bodies will be exposed areas on the printer bed. As AZ3312 is a positive resist, exposed areas in the polymer are broken down and will be washed away in the developer. Thus, in the case of the bodies shown below, the pads and lines will wash away while all other resist on the substrate remains in place. From an adhesion perspective, it is evidently a lot easier to develop structures in a matrix of connected resist than vice versa.
+
+
+Below shown are the results of the first experiment imaged in an optical microscope at 5x magnification.
+
+The first images shows 200 um on the very left to 10 um pads. The second image shows the tranisition of the 500 um trace to the 250 um trace.
+
+![Small pads](\assets\images\Micropatterning_Elegoo_Mars_SLA_3D_printer\220401_1st_pattern_test_AZ3312_on_Si\Developed_patterns_in_unexposed_resist\5x_small_pads_annotated)
 
