@@ -58,7 +58,7 @@ The exported STL files were then sliced and prepared for print in the [CHITUBOX]
 
 ## UV-exposure on Elegoo Mars 3 printer
 
-UV exposure was carried out by placing the resist-coated wafer upside down directly on the glass panel of the printer's LCD screen, as shown below. The correct exposure time, as mentioned above, was set by the bottom layer exposure time parameter in CHITUBOX.
+UV exposure was carried out in ONElab spaces by placing the resist-coated wafer upside down directly on the glass panel of the 3D printer's LCD screen, as shown below. The correct exposure time, as mentioned above, was set by the bottom layer exposure time parameter in CHITUBOX.
 
 <img src="/assets/images/Micropatterning_Elegoo_Mars_SLA_3D_printer/220401_1st_pattern_test_AZ3312_on_Si/Photos/IMG_3794.JPEG" width="30%" />
 <img src="/assets/images/Micropatterning_Elegoo_Mars_SLA_3D_printer/220401_1st_pattern_test_AZ3312_on_Si/Photos/IMG_3795.JPEG" width="30%" />
