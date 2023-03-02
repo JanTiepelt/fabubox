@@ -1,4 +1,4 @@
-# Micropatterning of Thin Films Using an SLA 3D Printer 
+# Micropatterning of Thin Films Using an LCD 3D Printer 
 
 ### in collaboration with Mayuran Saravanapavanantham
 
@@ -6,11 +6,11 @@
 
 ## Introduction to Experimental Approach
 
-Goal of the below described first set of experiments is to show whether we can use an SLA 3D printer to micropattern a film of photoresist spin-coated onto a Silicon wafer, that is, to perform a cheap and easy basic photolithography process. This approach is analogous to the classic lithographic flood-expose through a photomask, (tool cost on the order of 100,000 USD). The big difference here being that the exposure tool cost less than 500 USD and the photomask is digitally created from a CAD file, not a physically manufactured part making rapid prototyping impossible and redesigns costly and slow. Direct-write lithography tools like the Heidelberg [MLA150](https://heidelberg-instruments.com/product/mla150/) exist for flexibility in patterning directly from digital designs but are both very expensive (> 200,000 USD), large tools and comparably slow, exposures due to the nature of the approach of physically tracing out an input pattern to expose.  
+Goal of the below described first set of experiments is to show whether we can use an LCD 3D printer to micropattern a film of photoresist spin-coated onto a Silicon wafer, that is, to perform a cheap and easy basic photolithography process. This approach is analogous to the classic lithographic flood-expose through a photomask, (tool cost on the order of 100,000 USD). The big difference here being that the exposure tool cost less than 500 USD and the photomask is digitally created from a CAD file, not a physically manufactured part making rapid prototyping impossible and redesigns costly and slow. Direct-write lithography tools like the Heidelberg [MLA150](https://heidelberg-instruments.com/product/mla150/) exist for flexibility in patterning directly from digital designs but are both very expensive (> 200,000 USD), large tools and comparably slow, exposures due to the nature of the approach of physically tracing out an input pattern to expose.  
 
 <img src="/assets/images/Micropatterning_Elegoo_Mars_SLA_3D_printer/Elegoo_Mars3_printer.png" width="20%" />
 
-Here, we use a 350$ SLA 3D printer, the Elegoo Mars 3, to expose our structures created in Fusion 360 and exported as STL files. The Elegoo Mars features a 4K 6.6 inch LCD with 4098\*2560 pixels to project an image from a 405nm UV backlight. This yields a pixel-limited resolution of 35 um. While this does not rival the 1-micron resolution of the MLA150, a lithographic process using the LCD projection approach tested here, may enable micron-scale precision patterning in hobbyist-spaces by being both very cheap and a space-efficient tabletop solution. Possible fields of applications may be, bot not limited to, **MEMS fabrication, Lab-on-a-chip/Microfluidics, as well as rapid prototyping of tiny and flexible PCBs**, but also waveguides, metasurfaces, microanteannas and many more.
+Here, we use a 350$ LCD 3D printer, the Elegoo Mars 3, to expose our structures created in Fusion 360 and exported as STL files. The Elegoo Mars features a 4K 6.6 inch LCD with 4098\*2560 pixels to project an image from a 405nm UV backlight. This yields a pixel-limited resolution of 35 um. While this does not rival the 1-micron resolution of the MLA150, a lithographic process using the LCD projection approach tested here, may enable micron-scale precision patterning in hobbyist-spaces by being both very cheap and a space-efficient tabletop solution. Possible fields of applications may be, bot not limited to, **MEMS fabrication, Lab-on-a-chip/Microfluidics, as well as rapid prototyping of tiny and flexible PCBs**, but also waveguides, metasurfaces, microanteannas and many more.
 
 ## Sample Preparation
 
@@ -38,13 +38,13 @@ In order to calculate the correct exposure time, the lamp intensity must be know
 <img src="/assets/images/Micropatterning_Elegoo_Mars_SLA_3D_printer/220401_1st_pattern_test_AZ3312_on_Si/Photos/IMG_3785.JPEG" width="30%" />
 <img src="/assets/images/Micropatterning_Elegoo_Mars_SLA_3D_printer/220401_1st_pattern_test_AZ3312_on_Si/Photos/IMG_3787.JPEG" width="30%" />
 
-Knowing that the 3D printer's lamp is a 405 nm UV lamp, the diode sensitivity can be read out from the calibration data to be 0.065 A/W. Dividing the detected current by the sensitivity value yields a lamp irradiance of 2 mW. Since the area of the photodiode is 1x1 cm, the UV-light intensity is thus 2 mW/cm2. To finally obtain the required exposure time from this, one simply needs to divide the exposure dose by the lamp intensity, yielding an exposure time of *only 50 seconds*. 
+Knowing that the 3D printer's lamp is a 405 nm UV lamp, the diode sensitivity can be read out from the calibration data to be 0.065 A/W. Dividing the detected current by the sensitivity value yields a lamp irradiance of 2 mW. Since the area of the photodiode is 1x1 cm, the UV-light intensity is thus 2 mW/cm2. To finally obtain the required exposure time from this, one simply needs to divide the exposure dose by the lamp intensity, yielding an exposure time of *50 seconds*. 
 
 ## CAD of test structures to pattern into resist
 
 Structures for two experiments to be carried out were designed in Fusion 360, as expounded below. Test structures chosen here were sets of square pads of varying size and spacing as well as a continuous trace of increasingly lower width.  
 
-Since in an SLA 3D printer the bodies in the STL file are usually the areas of the resin to be hardened, *solid bodies will be exposed areas on the printer bed*. As AZ3312 is a positive resist, exposed areas in the polymer are broken down and will be washed away in the developer. Thus, in the case of the bodies shown in the first image below, the pads and lines will wash away while all other resist on the substrate remains in place. From an adhesion perspective, it is evidently a lot easier to develop structures in a matrix of connected resist than vice versa. 
+Since in an LCD 3D printer the bodies in the STL file are usually the areas of the resin to be hardened, *solid bodies will be exposed areas on the printer bed*. As AZ3312 is a positive resist, exposed areas in the polymer are broken down and will be washed away in the developer. Thus, in the case of the bodies shown in the first image below, the pads and lines will wash away while all other resist on the substrate remains in place. From an adhesion perspective, it is evidently a lot easier to develop structures in a matrix of connected resist than vice versa. 
 
 Sizes of the structures designed below range from 5 mm down to 10 um side length for the pairs of square pads. The smallest pads are not expected to be possible to develop with this approach since their side length is below the pixel resolution of the printer. Equivalently, the connected lines on the right-hand side range from 500 um to 25 um line width, that is, trace widths of about 20 mils down to 1 mil.
 
